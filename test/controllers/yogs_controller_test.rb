@@ -17,7 +17,7 @@ class YogsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create yog" do
     assert_difference('Yog.count') do
-      post yogs_url, params: { yog: { description_en: @yog.description_en, description_hi: @yog.description_hi, image_path: @yog.image_path, title: @yog.title } }
+      post yogs_url, params: { yog: { description_en: @yog.description_en, description_hi: @yog.description_hi, image_path: @yog.image_path, title: @yog.title, @yog.yog_type } }
     end
 
     assert_redirected_to yog_url(Yog.last)
@@ -34,7 +34,7 @@ class YogsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update yog" do
-    patch yog_url(@yog), params: { yog: { description_en: @yog.description_en, description_hi: @yog.description_hi, image_path: @yog.image_path, title: @yog.title } }
+    patch yog_url(@yog), params: { yog: { description_en: @yog.description_en, description_hi: @yog.description_hi, image_path: @yog.image_path, title: @yog.title, @yog.yog_type } }
     assert_redirected_to yog_url(@yog)
   end
 

@@ -5,6 +5,7 @@ class CreateYogs < ActiveRecord::Migration[6.0]
       t.string :description_en
       t.string :description_hi
       t.string :image_path
+      t.string :yog_type
 
       t.timestamps
     end

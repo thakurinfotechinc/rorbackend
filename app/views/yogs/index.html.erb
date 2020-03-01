@@ -9,6 +9,7 @@
       <th>Description en</th>
       <th>Description hi</th>
       <th>Image path</th>
+      <th>Yog type</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= yog.description_en %></td>
         <td><%= yog.description_hi %></td>
         <td><%= yog.image_path %></td>
+        <td><%= yog.yog_type %></td>
         <td><%= link_to 'Show', yog %></td>
         <td><%= link_to 'Edit', edit_yog_path(yog) %></td>
         <td><%= link_to 'Destroy', yog, method: :delete, data: { confirm: 'Are you sure?' } %></td>

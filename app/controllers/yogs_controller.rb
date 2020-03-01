@@ -69,6 +69,6 @@ class YogsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def yog_params
-      params.require(:yog).permit(:title, :description_en, :description_hi, :image_path)
+      params.require(:yog).permit(:title, :description_en, :description_hi, :image_path, :yog_type)
     end
 end

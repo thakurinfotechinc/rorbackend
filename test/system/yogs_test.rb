@@ -18,6 +18,7 @@ class YogsTest < ApplicationSystemTestCase
     fill_in "Description hi", with: @yog.description_hi
     fill_in "Image path", with: @yog.image_path
     fill_in "Title", with: @yog.title
+    fill_in "Yog type", with: @yog.yog_type
     click_on "Create Yog"
 
     assert_text "Yog was successfully created"
@@ -32,6 +33,7 @@ class YogsTest < ApplicationSystemTestCase
     fill_in "Description hi", with: @yog.description_hi
     fill_in "Image path", with: @yog.image_path
     fill_in "Title", with: @yog.title
+    fill_in "Yog type", with: @yog.yog_type
     click_on "Update Yog"
 
     assert_text "Yog was successfully updated"
