@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :yogas
   resources :yogs
   resources :songs
   resources :bhajans

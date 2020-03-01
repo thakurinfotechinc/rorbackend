@@ -1,0 +1,42 @@
+<%= form_with(model: yoga, local: true) do |form| %>
+  <% if yoga.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(yoga.errors.count, "error") %> prohibited this yoga from being saved:</h2>
+
+      <ul>
+        <% yoga.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description_en %>
+    <%= form.text_field :description_en %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description_hi %>
+    <%= form.text_field :description_hi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_path %>
+    <%= form.text_field :image_path %>
+  </div>
+
+  <div class="field">
+    <%= form.label :yoga_type %>
+    <%= form.text_field :yoga_type %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

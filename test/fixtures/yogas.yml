@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description_en: MyString
+  description_hi: MyString
+  image_path: MyString
+  yoga_type: MyString
+
+two:
+  title: MyString
+  description_en: MyString
+  description_hi: MyString
+  image_path: MyString
+  yoga_type: MyString
