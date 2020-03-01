@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @bhajan.title %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @bhajan.url %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @bhajan.type %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @bhajan.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_bhajan_path(@bhajan) %> |
+<%= link_to 'Back', bhajans_path %>

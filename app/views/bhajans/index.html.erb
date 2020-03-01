@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bhajans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Url</th>
+      <th>Type</th>
+      <th>Image url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bhajans.each do |bhajan| %>
+      <tr>
+        <td><%= bhajan.title %></td>
+        <td><%= bhajan.url %></td>
+        <td><%= bhajan.type %></td>
+        <td><%= bhajan.image_url %></td>
+        <td><%= link_to 'Show', bhajan %></td>
+        <td><%= link_to 'Edit', edit_bhajan_path(bhajan) %></td>
+        <td><%= link_to 'Destroy', bhajan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bhajan', new_bhajan_path %>

@@ -1,0 +1,2 @@
+class Bhajan < ApplicationRecord
+end
