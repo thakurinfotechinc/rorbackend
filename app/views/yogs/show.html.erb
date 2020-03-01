@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @yog.title %>
+</p>
+
+<p>
+  <strong>Description en:</strong>
+  <%= @yog.description_en %>
+</p>
+
+<p>
+  <strong>Description hi:</strong>
+  <%= @yog.description_hi %>
+</p>
+
+<p>
+  <strong>Image path:</strong>
+  <%= @yog.image_path %>
+</p>
+
+<%= link_to 'Edit', edit_yog_path(@yog) %> |
+<%= link_to 'Back', yogs_path %>

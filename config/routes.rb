@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :yogs
   resources :songs
   resources :bhajans
   devise_for :users
